@@ -1,6 +1,6 @@
 ---
 title: "WGBS Analysis Pipeline"
-author: "Mark E. Pepin, MS, PhD"
+author: "Mark E. Pepin, MD, PhD, MS"
 date: "21 January, 2021"
 output:
   html_document:
@@ -30,24 +30,24 @@ always_allow_html: yes
 
 
 
-**Author**: Mark E. Pepin, MS, PhD Biomedical Engineering | MD-PhD Trainee  
-**Contact**: pepinme@gmail.com  
-**Institution**: University of Alabama at Birmingham  
-**Location**: 542 Biomedical Research Building 2, Birmingham, AL 35294  
+**Author**: Mark E. Pepin, MS, PhD \
+**Contact**: pepinme@gmail.com  \
+**Institution**: Institute for Experimental Cardiology, University of Heidelberg \
+**Location**: 669 Im Neuenheimer Feld, 69120 Heidelberg, DE
 
-#Genome Assembly and Alignment
+# Genome Assembly and Alignment
 
 The first task is to align the bisulfite reduced and sequenced reads to a genome assembly. To accomplish this, the genome assembly was generated based on Gencode annotation (gencode.v28.annotation.gtf) and sequence (GRCh38.p12.genome.fa). For whole-genome bisulfite sequencing via the Bismark (v0.20.0) aligner and genome preparation, a CT- and GA-converted assemblies are created.
 
-##Genome Assembly
+## Genome Assembly
 
-##Adapter and Read Quality Trimming
+## Adapter and Read Quality Trimming
 
 Once the genome assembly was created, adapter sequences were trimmed and sequencing quality assessed via trim_galore and FastQC, respectively.
 
 `trim_galore -o $INPUT_DIR/fastq_trimmed/ --paired --rrbs --non_directional --length 20 --fastqc #$INPUT_DIR/fastq/${VAR}_R1_001.fastq.gz $INPUT_DIR/fastq/${VAR}_R2_001.fastq.gz.`
 
-##Read Alignment
+## Read Alignment
 
 We then aligned all .fastq files to the genome assemblies using the following command:
 
@@ -68,9 +68,9 @@ Once finished, the CpG methylation was extracted as both bedgraph file (for UCSC
 
 The "*.counted" files that resulted from this process were then read into R () and combined into a single "object" for differential methylation analysis
 
-#Differential Methylation Analysis
+# Differential Methylation Analysis
 
-##Combining sample methylation
+## Combining sample methylation
 
 
 ```r
@@ -250,7 +250,7 @@ dev.off()
 ```
 
 
-##Tiling Methylation Windows
+## Tiling Methylation Windows
 
 
 ```r
@@ -530,7 +530,7 @@ hm_Data<-as.data.frame(DiffMeth_Annotated.tiles_p05)
 hm_Data<-hm_Data[!is.na(hm_Data$annot.symbol),]
 rownames(hm_Data)<-make.unique(hm_Data$annot.symbol, sep = ".")
 
-##Make heatmap
+## Heatmap
 STATISTIC=0.05
 hm_Data<-dplyr::filter(hm_Data, pvalue<STATISTIC)
 
@@ -538,7 +538,7 @@ hm_Data<-dplyr::select(myDiff.tiles_p05, contains("perc.mC"))
 hm_Data<-data.matrix(hm_Data)
 
 ##
-##Index file for annotating samples
+## Index file for annotating samples
 hm_Index<-Index.raw
 hm_Index$Sample.ID<-paste0("perc.mC_", hm_Index$Sample.ID)
 rownames(hm_Index)<-hm_Index$Sample.ID
@@ -559,7 +559,7 @@ pheatmap(hm_Data,
          filename = paste0("../2_Output/", ANALYSIS, "/DMR/", ANALYSIS, "_Heatmap.Q05.pdf"))
 ```
 
-#Figure 3: Hierarchical Clustering of Top 5 Canonical Pathways
+# Figure 3: Hierarchical Clustering of Top 5 Canonical Pathways
 
 
 ```r
@@ -796,7 +796,7 @@ dev.off()
 ##                 2
 ```
 
-##Circos
+## Circos
 
 
 ```r
@@ -985,7 +985,7 @@ dev.off()
 ```
 
 
-#DMP Distribution: Manhattan plot
+# DMP Distribution: Manhattan plot
 
 
 ```r
@@ -1157,7 +1157,7 @@ ggplot(gathered_annot, aes(x=start, y=Methylation, group = Sample.ID, color=Grou
 ![](README_files/figure-html/ridgeline-1.png)<!-- -->
 
 
-#Supplemental Table: R Session Information
+# Supplemental Table: R Session Information
 
 All packages and setting are acquired using the following command: 
 
