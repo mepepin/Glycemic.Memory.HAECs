@@ -30,9 +30,9 @@ always_allow_html: yes
 
 
 
-**Author**: Mark E. Pepin, MS, PhD
-**Contact**: pepinme@gmail.com  
-**Institution**: Institute for Experimental Cardiology, University of Heidelberg
+**Author**: Mark E. Pepin, MS, PhD \
+**Contact**: pepinme@gmail.com  \
+**Institution**: Institute for Experimental Cardiology, University of Heidelberg \
 **Location**: 669 Im Neuenheimer Feld, 69120 Heidelberg, DE
 
 # Genome Assembly and Alignment
