@@ -1,6 +1,6 @@
 ---
 title: "WGBS Analysis Pipeline"
-author: "Mark E. Pepin, MS, PhD"
+author: "Mark E. Pepin, MD, PhD, MS"
 date: "21 January, 2021"
 output:
   html_document:
