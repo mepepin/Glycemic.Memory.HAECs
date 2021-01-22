@@ -45,24 +45,24 @@ The first task is to align the bisulfite reduced and sequenced reads to a genome
 
 Once the genome assembly was created, adapter sequences were trimmed and sequencing quality assessed via trim_galore and FastQC, respectively.
 
-`trim_galore -o $INPUT_DIR/fastq_trimmed/ --paired --rrbs --non_directional --length 20 --fastqc #$INPUT_DIR/fastq/${VAR}_R1_001.fastq.gz $INPUT_DIR/fastq/${VAR}_R2_001.fastq.gz.`
+`trim_galore -o $INPUT_DIR/fastq_trimmed/ --paired --rrbs --non_directional --length 20 --fastqc #$INPUT_DIR/fastq/${VAR}_R1_001.fastq.gz $INPUT_DIR/fastq/${VAR}_R2_001.fastq.gz.`\
 
 ## Read Alignment
 
 We then aligned all .fastq files to the genome assemblies using the following command:
 
-`bwameth.py --threads 8 --reference $GENOME_DIR/GRCh38.p12.genome.fa $INPUT_DIR/fastq_trimmed/${VAR}_R1_001_val_1.fq.gz $INPUT_DIR/fastq_trimmed/${VAR}_R2_001_val_2.fq.gz > $RESULTS_DIR/RRBS_bwa/${VAR}.sam`
+`bwameth.py --threads 8 --reference $GENOME_DIR/GRCh38.p12.genome.fa $INPUT_DIR/fastq_trimmed/${VAR}_R1_001_val_1.fq.gz\ $INPUT_DIR/fastq_trimmed/${VAR}_R2_001_val_2.fq.gz > $RESULTS_DIR/RRBS_bwa/${VAR}.sam`\
 
 Once aligned, we converted to .bam output.
 
-`#Convert .sam to .bam`
-`samtools view -S -b $RESULTS_DIR/RRBS_bwa/${VAR}.sam > $RESULTS_DIR/RRBS_bwa/${VAR}.bam`
-`#Sort using samtools`
-`samtools sort $RESULTS_DIR/RRBS_bwa/${VAR}.bam -o $RESULTS_DIR/RRBS_bwa/${VAR}.sorted.bam`
-`#create an index`
-`samtools index $RESULTS_DIR/RRBS_bwa/${VAR}.sorted.bam`
-`#MethylDackel`
-`MethylDackel extract $GENOME_DIR/GRCh38.p12.genome.fa $RESULTS_DIR/RRBS_bwa/${VAR}.sorted.bam -o $RESULTS_DIR/RRBS_bwa/${VAR}.counted --methylKit`
+`#Convert .sam to .bam`\
+`samtools view -S -b $RESULTS_DIR/RRBS_bwa/${VAR}.sam > $RESULTS_DIR/RRBS_bwa/${VAR}.bam`\
+`#Sort using samtools`\
+`samtools sort $RESULTS_DIR/RRBS_bwa/${VAR}.bam -o $RESULTS_DIR/RRBS_bwa/${VAR}.sorted.bam`\
+`#create an index`\
+`samtools index $RESULTS_DIR/RRBS_bwa/${VAR}.sorted.bam`\
+`#MethylDackel`\
+`MethylDackel extract $GENOME_DIR/GRCh38.p12.genome.fa $RESULTS_DIR/RRBS_bwa/${VAR}.sorted.bam -o $RESULTS_DIR/RRBS_bwa/${VAR}.counted --methylKit`\
 
 Once finished, the CpG methylation was extracted as both bedgraph file (for UCSC genome browser) and bed file, which was then used to identify differentially-methylated cytosines (DMCs) and differentially-methylated regions (DMRs).
 
