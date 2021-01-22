@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	1_HAEC_0_R1_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/1_HAEC_0_R1_001_fastqc.zip
+FastQC	all_sections	1_HAEC_0_R2_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/1_HAEC_0_R2_001_fastqc.zip
+FastQC	all_sections	1_HAEC_1_25_R1_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/1_HAEC_1_25_R1_001_fastqc.zip
+FastQC	all_sections	1_HAEC_1_25_R2_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/1_HAEC_1_25_R2_001_fastqc.zip
+FastQC	all_sections	1_HAEC_2_5_R1_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/1_HAEC_2_5_R1_001_fastqc.zip
+FastQC	all_sections	1_HAEC_2_5_R2_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/1_HAEC_2_5_R2_001_fastqc.zip
+FastQC	all_sections	2_HAEC_0_R1_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/2_HAEC_0_R1_001_fastqc.zip
+FastQC	all_sections	2_HAEC_0_R2_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/2_HAEC_0_R2_001_fastqc.zip
+FastQC	all_sections	2_HAEC_1_25_R1_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/2_HAEC_1_25_R1_001_fastqc.zip
+FastQC	all_sections	2_HAEC_1_25_R2_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/2_HAEC_1_25_R2_001_fastqc.zip
+FastQC	all_sections	2_HAEC_2_5_R1_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/2_HAEC_2_5_R1_001_fastqc.zip
+FastQC	all_sections	2_HAEC_2_5_R2_001	/Volumes/Seagate Expansion Drive/Cheaha_Backup/Napoli/Alignment/Input/HAEC/2_HAEC_2_5_R2_001_fastqc.zip

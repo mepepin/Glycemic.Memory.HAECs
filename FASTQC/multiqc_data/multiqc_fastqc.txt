@@ -1,0 +1,13 @@
+Sample	Filename	File type	Encoding	Total Sequences	Sequences flagged as poor quality	Sequence length	%GC	total_deduplicated_percentage	avg_sequence_length	basic_statistics	per_base_sequence_quality	per_tile_sequence_quality	per_sequence_quality_scores	per_base_sequence_content	per_sequence_gc_content	per_base_n_content	sequence_length_distribution	sequence_duplication_levels	overrepresented_sequences	adapter_content
+1_HAEC_0_R1_001	1_HAEC_0_R1_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	17229266.0	0.0	75.0	38.0	55.28231704869017	75.0	pass	pass	pass	pass	fail	fail	pass	pass	warn	fail	fail
+1_HAEC_0_R2_001	1_HAEC_0_R2_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	17229266.0	0.0	75.0	38.0	63.655087575831615	75.0	pass	pass	pass	pass	fail	fail	pass	pass	warn	warn	fail
+1_HAEC_1_25_R1_001	1_HAEC_1_25_R1_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	18351157.0	0.0	75.0	39.0	54.224938802863164	75.0	pass	pass	pass	pass	fail	fail	pass	pass	warn	fail	fail
+1_HAEC_1_25_R2_001	1_HAEC_1_25_R2_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	18351157.0	0.0	75.0	39.0	62.11662608598636	75.0	pass	pass	pass	pass	fail	fail	pass	pass	warn	fail	fail
+1_HAEC_2_5_R1_001	1_HAEC_2_5_R1_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	11326835.0	0.0	75.0	37.0	57.867225000360754	75.0	pass	pass	pass	pass	fail	fail	pass	pass	warn	fail	fail
+1_HAEC_2_5_R2_001	1_HAEC_2_5_R2_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	11326835.0	0.0	75.0	37.0	74.11757267312846	75.0	pass	pass	pass	pass	fail	fail	pass	pass	pass	fail	warn
+2_HAEC_0_R1_001	2_HAEC_0_R1_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	25909089.0	0.0	75.0	39.0	51.17547634013163	75.0	pass	pass	pass	pass	fail	fail	pass	pass	warn	fail	fail
+2_HAEC_0_R2_001	2_HAEC_0_R2_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	25909089.0	0.0	75.0	38.0	59.21150114461645	75.0	pass	pass	pass	pass	fail	fail	pass	pass	warn	fail	fail
+2_HAEC_1_25_R1_001	2_HAEC_1_25_R1_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	12537092.0	0.0	75.0	39.0	56.493551100519035	75.0	pass	pass	pass	pass	fail	fail	pass	pass	warn	fail	fail
+2_HAEC_1_25_R2_001	2_HAEC_1_25_R2_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	12537092.0	0.0	75.0	38.0	63.12129365112573	75.0	pass	pass	pass	pass	fail	fail	pass	pass	warn	fail	fail
+2_HAEC_2_5_R1_001	2_HAEC_2_5_R1_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	17553927.0	0.0	75.0	38.0	50.727319851888154	75.0	pass	pass	pass	pass	fail	fail	pass	pass	warn	warn	fail
+2_HAEC_2_5_R2_001	2_HAEC_2_5_R2_001.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	17553927.0	0.0	75.0	38.0	58.292808558783236	75.0	pass	pass	pass	pass	fail	fail	pass	pass	warn	warn	fail
